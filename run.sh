@@ -4,7 +4,7 @@ sudo yum install -y emacs
 
 #prep for installing rbenv
 sudo yum install -y gcc-c++ glibc-headers openssl-devel readline libyaml-devel readline-devel zlib zlib-devel
-sudo yum install -y gcc sqlite-devel libicu-devel cmake
+sudo yum install -y gcc sqlite-devel libicu-devel cmake postgresql-server
 
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
@@ -18,3 +18,4 @@ rbenv global 2.5.3
 ruby --version
 
 gem install rails
+
