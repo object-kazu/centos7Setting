@@ -13,8 +13,8 @@ source ~/.bash_profile
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 rbenv install -l
-rbenv install 2.4.0
-rbenv global 2.4.0
+rbenv install 2.5.3
+rbenv global 2.5.3
 ruby --version
 
 gem install rails
