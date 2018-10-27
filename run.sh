@@ -17,5 +17,17 @@ rbenv install 2.5.3
 rbenv global 2.5.3
 ruby --version
 
+#rails install
 gem install rails
+
+
+#node install
+curl -sL https://rpm.nodesource.com/setup_6.x | sudo bash -
+sudo yum install -y nodejs
+
+#login switch to zsh
+sudo yum install -y zsh
+
+sudo chsh -s /usr/bin/zsh vagrant
+
 
