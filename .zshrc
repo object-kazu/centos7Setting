@@ -6,25 +6,25 @@ export PATH=/usr/local/bin:$PATH
 export LANG=ja_JP.UTF-8
 
 #RUST
-export PATH=/Users/shimizukazuyuki/.cargo/bin/racer:$PATH
-#export RUST_SRC_PATH=/Users/shimizukazuyuki/src/rust/src
-export RUST_SRC_PATH=/Users/shimizukazuyuki/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
-source $HOME/.cargo/env
+# export PATH=/Users/shimizukazuyuki/.cargo/bin/racer:$PATH
+# #export RUST_SRC_PATH=/Users/shimizukazuyuki/src/rust/src
+# export RUST_SRC_PATH=/Users/shimizukazuyuki/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
+# source $HOME/.cargo/env
 
 #LLVM
-export PATH=/usr/local/opt/llvm/bin:$PATH
+# export PATH=/usr/local/opt/llvm/bin:$PATH
 
 #shell scripts PATH
-export PATH=~/Dropbox/ShellScripts:$PATH
-export PATH=~/Dropbox/ShellScripts/todo_git_dev:$PATH
-export PATH=~/Dropbox/CommonSetting/bm-emacs-zsh/bookmark-emacs-zsh/:$PATH
+# export PATH=~/Dropbox/ShellScripts:$PATH
+# export PATH=~/Dropbox/ShellScripts/todo_git_dev:$PATH
+# export PATH=~/Dropbox/CommonSetting/bm-emacs-zsh/bookmark-emacs-zsh/:$PATH
 
 #android PATH
-export PATH=/Applications/androidDev/sdk/tools:$PATH
-export PATH=/Applications/androidDev/sdk/platform-tools:$PATH
+# export PATH=/Applications/androidDev/sdk/tools:$PATH
+# export PATH=/Applications/androidDev/sdk/platform-tools:$PATH
 
 #emacsc(1)
-export PATH=/usr/local/Cellar/emacs-mac/emacs-25.2-z-mac-6.4/bin:$PATH
+# export PATH=/usr/local/Cellar/emacs-mac/emacs-25.2-z-mac-6.4/bin:$PATH
 
 #npm -> nodebrew
 #"export PATH=/usr/local/lib/node_modules:$PATH
@@ -36,20 +36,20 @@ export PATH=/usr/local/Cellar/emacs-mac/emacs-25.2-z-mac-6.4/bin:$PATH
 #export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 #git-diff
-export PATH=/usr/local/share/git-core/contrib/diff-highlight:$PATH
+# export PATH=/usr/local/share/git-core/contrib/diff-highlight:$PATH
 
 #goLang
-GOPATH="$HOME/go"
-export GOPATH
+# GOPATH="$HOME/go"
+# export GOPATH
 
 # for IT-colleage text pdf 
-export PATH=~/ActiveProject/IT_Colleage:$PATH
+# export PATH=~/ActiveProject/IT_Colleage:$PATH
 
 
 ################ Langs  ##########################################
 
 #tmux 
-[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
+# [[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
 
 
 
@@ -72,27 +72,27 @@ compinit
 
 
 # cd-bookmard
-fpath=($HOME/.zsh/functions/cd-bookmark(N-/) $fpath) # autoload -U よりも前に記述する必要あり
-autoload -Uz cd-bookmark
+# fpath=($HOME/.zsh/functions/cd-bookmark(N-/) $fpath) # autoload -U よりも前に記述する必要あり
+# autoload -Uz cd-bookmark
 
 # bookmark-emacs-zsh
-autoload -Uz bm-e-z
-alias bm='bm-e-z'
-alias bml='bm-e-z -l'
-alias bma='bm-e-z -a'
-alias bmu='bm-e-z -u'
+# autoload -Uz bm-e-z
+# alias bm='bm-e-z'
+# alias bml='bm-e-z -l'
+# alias bma='bm-e-z -a'
+# alias bmu='bm-e-z -u'
 
 # python
-alias py='python'
-alias jn='jupyter notebook'
+# alias py='python'
+# alias jn='jupyter notebook'
 
 # rust alias
-alias cg='cargo'
-alias cgr='cargo run'
-alias cgb='cargo build'
-alias cgc='cargo check'
-alias cgt='cargo test'
-alias rsc='rustc'
+# alias cg='cargo'
+# alias cgr='cargo run'
+# alias cgb='cargo build'
+# alias cgc='cargo check'
+# alias cgt='cargo test'
+# alias rsc='rustc'
 
 ###### prompt ################################
 autoload colors
@@ -165,105 +165,52 @@ bindkey -e
 alias diff='colordiff'
 
 # emacs ripper-tags 
-alias ripper='ripper-tags -e -R -f TAGS'
+# alias ripper='ripper-tags -e -R -f TAGS'
 
 # ghostscript
 # IT_Colleage のPDFをまとめるコマンド
-alias gspdf='gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -sOutputFile=out.pdf'
+# alias gspdf='gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -sOutputFile=out.pdf'
 
 alias ls='ls -axFG'
 alias lls='ls'
 
 #move
-alias mdesktop='cd ~/Desktop'
-alias mxcode='cd ~/Dropbox/xcodeProject/'
-alias mmobile='cd /Volumes/shimizukazuyuki/mobile_ks_idea/'
-alias mth='cd ~/Dropbox/momijiMac_Wp_Theme'
-alias mdr='cd ~/Dropbox/'
-alias mstyle='/Applications/wordpress-3.0.5-0/apps/wordpress/htdocs/wp-content/themes/ksstyle2/'
-alias mtd='~/Dropbox/ShellScripts/todo_git/'
-alias mbit='cd ~/BitTorrent\ Sync/'
+# alias mdesktop='cd ~/Desktop'
+# alias mxcode='cd ~/Dropbox/xcodeProject/'
+# alias mmobile='cd /Volumes/shimizukazuyuki/mobile_ks_idea/'
+# alias mth='cd ~/Dropbox/momijiMac_Wp_Theme'
+# alias mdr='cd ~/Dropbox/'
+# alias mstyle='/Applications/wordpress-3.0.5-0/apps/wordpress/htdocs/wp-content/themes/ksstyle2/'
+# alias mtd='~/Dropbox/ShellScripts/todo_git/'
+# alias mbit='cd ~/BitTorrent\ Sync/'
 
 #git
-alias gitx='open -a /Applications/GitX.app/'
-alias gits='git status'
-alias gitc='git checkout'
-alias gitb='git branch'
-alias gitd='git diff'
-alias gita='sh ~/Dropbox/ShellScripts/todo_git_dev/git_com.sh'
-alias gitmt='git mergetool -y'
-alias gitlf='git log --grep'
-alias gitl='git log -p'
-alias gtree='git log --graph --all --format="%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(magenta reverse)%d%Creset %s"'
-
-
-#todotxt
-alias td='todo.sh'
-alias tda='todo.sh add'
-alias tdl='todo.sh ls'
-alias tdr='todo.sh replace'
-alias tdone='todo.sh do'
-alias tdp='todo.sh projectview'
-
-#todo-git
-alias tg='todo_git.sh'
-alias tge='todo_git.sh -e'
-alias tgl='todo_git.sh -l'
-alias tgs='todo_git.sh -s'
-alias tgf='todo_git.sh -f'
-alias tgr='todo_git.sh -r'
-alias tgo='todo_git.sh -o'
-alias tgd='todo_git.sh -d'
-alias tgx='todo_git.sh -x'
-alias tgp='todo_git.sh -p'
-
-## now testing  ##
-alias tgb='todo_git.sh -b'
-alias tgm='todo_git.sh -m'
-alias tgu='todo_git.sh -u'
-
-#haiku
-alias hir='haikuImage.sh -r'
-alias hil='haikuImage.sh -l'
-alias hih='haikuImage.sh -h'
-
-#haiku photo 2L size
-#h2l file.jpg "HAIKU"
-alias h2l='haikuPhoto_2L.sh'
+# alias gitx='open -a /Applications/GitX.app/'
+# alias gits='git status'
+# alias gitc='git checkout'
+# alias gitb='git branch'
+# alias gitd='git diff'
+# alias gita='sh ~/Dropbox/ShellScripts/todo_git_dev/git_com.sh'
+# alias gitmt='git mergetool -y'
+# alias gitlf='git log --grep'
+# alias gitl='git log -p'
+# alias gtree='git log --graph --all --format="%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(magenta reverse)%d%Creset %s"'
 
 #perl
-alias pbrew='perlbrew'
-alias cpm='cpanm'
-alias plc='perl -cw'
-alias pl='perl'
+# alias pbrew='perlbrew'
+# alias cpm='cpanm'
+# alias plc='perl -cw'
+# alias pl='perl'
 
 #global
-alias gtg='gtags --gtagslabel=pygments --debug'
+# alias gtg='gtags --gtagslabel=pygments --debug'
 
-#icons
-alias icon='icons.sh'
-
-#jazzy
-alias jazzy='jazzy --swift-version'
-
-#cordova
-alias crd='cordova'
-
-#jenkins
-alias jenkins='java -jar /usr/local/opt/jenkins/libexec/jenkins.war'
 
 #rails and ruby
 alias ry='ruby'
 alias ra='rails'
 alias bx='bundle exec'
 alias bb='ruby -rbyebug'
-
-#my ruby script
-alias coloname='ruby /Users/shimizukazuyuki/ActiveProject/color-picker/rename.rb'
-
-
-#javberwock専用コマンド
-alias ksyard='yardoc lib/**/*.rb -o ~/ActiveProject/JabberWockProjects/JabverwockRuby/yardocuments'
 
 
 # 以下の設定は.zprofileに移動した
@@ -273,22 +220,6 @@ alias ksyard='yardoc lib/**/*.rb -o ~/ActiveProject/JabberWockProjects/Jabverwoc
 
 #vagrant
 alias va='vagrant'
-
-#docker
-alias dc='docker'
-alias dcp='docker ps -a'
-
-#emacsclient
-export EDITOR=emacsclient
-export VISUAL=emacsclient
-alias e='/Applications/Emacs25.3.app/Contents/MacOS/bin/emacsclient'
-alias emacsclient='/Applications/Emacs25.3.app/Contents/MacOS/bin/emacsclient -n'
-
-
-#xcode
-alias swift='xcrun swift'
-alias swiftc="xcrun swiftc -sdk $SDKROOT"
-
 
 #zsh git
 autoload -Uz vcs_info
@@ -332,13 +263,6 @@ function rprompt-git-current-branch {
  fi
  echo "$color$name$action%f%b "
 }
-
-
-#perlbrew
-source $HOME/perl5/perlbrew/etc/bashrc
-
-#ruby
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 
 #cd をうったら自動的にｌｓを打つ
@@ -422,46 +346,46 @@ fi
 # bindkey "^X^P" zaw-process
 
 
-source ~/.zsh.d/z.sh
-#peco
-function peco-select-history() {
-   local tac
-   if which tac > /dev/null; then
-       tac="tac"
-   else
-       tac="tail -r"
-   fi
-   BUFFER=$(\history -n 1 | \
-       eval $tac | \
-       peco --query "$LBUFFER")
-   CURSOR=$#BUFFER
-   zle clear-screen
-}
-zle -N peco-select-history
-bindkey '^r' peco-select-history
-source ~/.zsh.d/z.sh
+# source ~/.zsh.d/z.sh
+# #peco
+# function peco-select-history() {
+#    local tac
+#    if which tac > /dev/null; then
+#        tac="tac"
+#    else
+#        tac="tail -r"
+#    fi
+#    BUFFER=$(\history -n 1 | \
+#        eval $tac | \
+#        peco --query "$LBUFFER")
+#    CURSOR=$#BUFFER
+#    zle clear-screen
+# }
+# zle -N peco-select-history
+# bindkey '^r' peco-select-history
+# source ~/.zsh.d/z.sh
 
 
-function peco-z-search
-{
- which peco z > /dev/null
- if [ $? -ne 0 ]; then
-   echo "Please install peco and z"
-   return 1
- fi
- local res=$(z | sort -rn | cut -c 12- | peco)
- if [ -n "$res" ]; then
-   BUFFER+="cd $res"
-   zle accept-line
- else
-   return 1
- fi
-}
-zle -N peco-z-search
-bindkey '^f' peco-z-search
-export PATH="/usr/local/opt/texinfo/bin:$PATH"
+# function peco-z-search
+# {
+#  which peco z > /dev/null
+#  if [ $? -ne 0 ]; then
+#    echo "Please install peco and z"
+#    return 1
+#  fi
+#  local res=$(z | sort -rn | cut -c 12- | peco)
+#  if [ -n "$res" ]; then
+#    BUFFER+="cd $res"
+#    zle accept-line
+#  else
+#    return 1
+#  fi
+# }
+# zle -N peco-z-search
+# bindkey '^f' peco-z-search
+# export PATH="/usr/local/opt/texinfo/bin:$PATH"
 
-export LUA_PATH='/usr/local/share/lua/5.2/?.lua;/usr/local/share/lua/5.2/?/init.lua;/usr/local/Cellar/lua/5.2.4_4/libexec/share/lua/5.2/?.lua;/usr/local/lib/lua/5.2/?.lua;/usr/local/lib/lua/5.2/?/init.lua;./?.lua;~/.luarocks/share/lua/5.2/?.lua'
-export LUA_CPATH='/usr/local/lib/lua/5.2/?.so;/usr/local/lib/lua/5.2/loadall.so;./?.so'
+# export LUA_PATH='/usr/local/share/lua/5.2/?.lua;/usr/local/share/lua/5.2/?/init.lua;/usr/local/Cellar/lua/5.2.4_4/libexec/share/lua/5.2/?.lua;/usr/local/lib/lua/5.2/?.lua;/usr/local/lib/lua/5.2/?/init.lua;./?.lua;~/.luarocks/share/lua/5.2/?.lua'
+# export LUA_CPATH='/usr/local/lib/lua/5.2/?.so;/usr/local/lib/lua/5.2/loadall.so;./?.so'
 
 
